@@ -1,0 +1,25 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-block-text .flex {
+	.order-left {
+		text-align: left;
+		text-transform: uppercase;
+	}
+	.order-right {
+		text-align: right;
+		text-transform: uppercase;
+	}
+
+	.text-subtitle {
+		font-family: "gothambook";
+		font-size: 18px;
+	}
+	.text-block {
+		padding: 0 15px;
+		text-align: justify;
+	}
+}

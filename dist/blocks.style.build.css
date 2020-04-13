@@ -1,0 +1,41 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-cgb-block-skadi-block img {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
+  width: 100%; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-cgb-block-text .flex .order-left {
+  text-align: left;
+  text-transform: uppercase; }
+
+.wp-block-cgb-block-text .flex .order-right {
+  text-align: right;
+  text-transform: uppercase; }
+
+.wp-block-cgb-block-text .flex .text-subtitle {
+  font-family: "gothambook";
+  font-size: 18px; }
+
+.wp-block-cgb-block-text .flex .text-block {
+  padding: 0 15px;
+  text-align: justify; }
