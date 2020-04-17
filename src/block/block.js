@@ -50,14 +50,10 @@ const sortOutCSSClasses = (alignment, className, mediaURL) => {
  */
 registerBlockType("cgb/block-skadi-block", {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __("skadi-block - CGB Block"), // Block title.
-	icon: "shield", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	title: __("Skadi block"), // Block title.
+	icon: "tagcloud", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: "common", // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
-	keywords: [
-		__("skadi-block — CGB Block"),
-		__("CGB Example"),
-		__("create-guten-block"),
-	],
+	keywords: [__("skadi block"), __("CGB Example"), __("create-guten-block")],
 	attributes: {
 		title: {
 			type: "array",

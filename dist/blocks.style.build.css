@@ -210,8 +210,9 @@
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse; }
 
-.wp-block-cgb-skadi-sponsors-partners h2 {
-  margin-top: 0; }
+.wp-block-cgb-skadi-sponsors-partners h1 {
+  margin-top: 0;
+  text-align: center; }
 /**
  * #.# Common SCSS
  *

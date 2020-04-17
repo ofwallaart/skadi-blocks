@@ -71,8 +71,8 @@ const TEMPLATE = [
  */
 registerBlockType("cgb/skadi-sponsors-partners", {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __("skadi sponsors & partners"), // Block title.
-	icon: "shield", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	title: __("Skadi sponsors & partners"), // Block title.
+	icon: "businessman", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: "layout", // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__("skadi sponsors & partners"),
@@ -96,7 +96,7 @@ registerBlockType("cgb/skadi-sponsors-partners", {
 
 		return (
 			<div className={wrapClasses}>
-				<h2>{__("Sponsoren & Partners")}</h2>
+				<h1>{__("Sponsoren & Partners")}</h1>
 				<div className="row">
 					<div className="col">
 						<InnerBlocks template={TEMPLATE} />
@@ -124,7 +124,7 @@ registerBlockType("cgb/skadi-sponsors-partners", {
 
 		return (
 			<div className={wrapClasses}>
-				<h2>{__("Sponsoren & Partners")}</h2>
+				<h1>{__("Sponsoren & Partners")}</h1>
 				<div className="row">
 					<div className="col">
 						<InnerBlocks.Content />

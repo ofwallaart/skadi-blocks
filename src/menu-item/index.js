@@ -2,7 +2,7 @@
  * WordPress dependencies
  */
 import { __, _x } from "@wordpress/i18n";
-import { image as icon } from "@wordpress/icons";
+import { menu as icon } from "@wordpress/icons";
 import {
 	registerBlockType,
 	unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase

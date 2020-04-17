@@ -30,8 +30,8 @@ import { registerBlockType } from "@wordpress/blocks";
 registerBlockType("cgb/skadi-divider", {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __("skadi sponsors & partners"), // Block title.
-	icon: "shield", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: "layout", // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	icon: "minus", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	category: "common", // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [__("skadi divider"), __("CGB Example"), __("create-guten-block")],
 
 	/**
