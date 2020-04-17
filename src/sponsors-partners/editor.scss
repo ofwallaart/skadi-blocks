@@ -1,0 +1,25 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+$enable-flex: true;
+$enable-grid-classes: true;
+
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+@import "~bootstrap/scss/_reboot.scss";
+@import "~bootstrap/scss/_grid.scss";
+
+.wp-block-cgb-block-skadi-block {
+	button {
+		overflow: visible;
+	}
+
+	.no-img {
+		display: block;
+	}
+}

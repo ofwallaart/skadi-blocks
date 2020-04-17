@@ -5,8 +5,25 @@
  */
 
 .wp-block-cgb-block-skadi-block {
-	img {
-		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
-		width: 100%;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
+	margin: 20px 0px;
+	padding: 10px;
+
+	.no-img {
+		display: none;
+	}
+
+	.flex {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&.image-right {
+			flex-direction: row-reverse;
+		}
+	}
+
+	h2 {
+		margin-top: 0;
 	}
 }

@@ -4,14 +4,29 @@
  * CSS for both Frontend+Backend.
  */
 
-.wp-block-cgb-block-text .flex {
+.wp-block-cgb-block-text.flex {
+	h3 {
+		text-transform: uppercase;
+		span:first-of-type {
+			margin-right: 5px;
+		}
+	}
 	.order-left {
 		text-align: left;
-		text-transform: uppercase;
+
+		h3 {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+		}
 	}
 	.order-right {
 		text-align: right;
-		text-transform: uppercase;
+		h3 {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: baseline;
+		}
 	}
 
 	.text-subtitle {

@@ -12,3 +12,11 @@
 import "./block/block.js";
 
 import "./text/block.js";
+
+import "./image/index.js";
+
+import "./menu-item/index.js";
+
+import "./sponsors-partners/block.js";
+
+import "./divider/block.js";

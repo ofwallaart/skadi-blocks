@@ -95,6 +95,17 @@ function skadi_block_cgb_block_assets() { // phpcs:ignore
 			'editor_style'  => 'skadi_block-cgb-block-editor-css',
 		)
 	);
+
+	register_block_type(
+		'cgb/skadi-image', array(
+			// Enqueue blocks.style.build.css on both frontend & backend.
+			'style'         => 'skadi_block-cgb-style-css',
+			// Enqueue blocks.build.js in the editor only.
+			'editor_script' => 'skadi_block-cgb-block-js',
+			// Enqueue blocks.editor.build.css in the editor only.
+			'editor_style'  => 'skadi_block-cgb-block-editor-css',
+		)
+	);
 }
 
 // Hook: Block assets.

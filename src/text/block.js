@@ -64,17 +64,17 @@ registerBlockType("cgb/block-text", {
 		title: {
 			type: "array",
 			source: "children",
-			selector: "h2",
+			selector: ".text-title",
 		},
 		subtitle: {
 			type: "array",
 			source: "children",
-			selector: "h3",
+			selector: ".text-subtitle",
 		},
 		body: {
 			type: "array",
 			source: "children",
-			selector: ".callout-body",
+			selector: ".text-block",
 		},
 		alignment: {
 			type: "string",
@@ -124,23 +124,27 @@ registerBlockType("cgb/block-text", {
 			),
 			<div className={wrapClass} key="container">
 				<div className={titleClasses}>
-					<RichText
-						tagName="h2"
-						placeholder={__("Write a title")}
-						value={title}
-						onChange={onChangeTitle}
-					/>
-					<RichText
-						tagName="h3"
-						placeholder={__("Write a subtitle")}
-						value={subtitle}
-						onChange={onChangeSubTitle}
-					/>
+					<h3>
+						<RichText
+							tagName="span"
+							placeholder={__("Write a title")}
+							className="text-title"
+							value={title}
+							onChange={onChangeTitle}
+						/>{" "}
+						<RichText
+							tagName="span"
+							placeholder={__("Write a subtitle")}
+							className="text-subtitle"
+							value={subtitle}
+							onChange={onChangeSubTitle}
+						/>
+					</h3>
 				</div>
 				<RichText
 					tagName="div"
 					multiline="p"
-					className="callout-body"
+					className="text-block col-md-12"
 					placeholder={__("Write a body")}
 					value={body}
 					onChange={onChangeBody}
@@ -157,17 +161,30 @@ registerBlockType("cgb/block-text", {
 		const [titleClasses, wrapClass] = sortOutCSSClasses(alignment, className);
 
 		return (
-			<div className="bootstrap-block">
-				<div className={wrapClass}>
-					<div className={titleClasses}>
-						<h3>
-							<span class="text-title">{title}</span>{" "}
-							<span class="text-subtitle">{subtitle}</span>
-						</h3>
-					</div>
-					<div className="text-block col-md-12">{body}</div>
+			// <div className="bootstrap-block">
+			<div className={wrapClass}>
+				<div className={titleClasses}>
+					<h3>
+						<RichText.Content
+							tagName="span"
+							className="text-title"
+							value={title}
+						/>{" "}
+						<RichText.Content
+							tagName="span"
+							className="text-subtitle"
+							value={subtitle}
+						/>
+					</h3>
 				</div>
+				<RichText.Content
+					tagName="div"
+					multiline="p"
+					className="text-block col-md-12"
+					value={body}
+				/>
 			</div>
+			// </div>
 		);
 	},
 });

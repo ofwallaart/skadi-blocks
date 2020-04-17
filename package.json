@@ -1,14 +1,21 @@
 {
-  "name": "skadi-block-cgb-guten-block",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "cgb-scripts start",
-    "build": "cgb-scripts build",
-    "eject": "cgb-scripts eject"
-  },
-  "dependencies": {
-    "cgb-scripts": "1.23.0",
-    "classnames": "^2.2.6"
-  }
+	"name": "skadi-block-cgb-guten-block",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "cgb-scripts start",
+		"build": "cgb-scripts build",
+		"eject": "cgb-scripts eject"
+	},
+	"dependencies": {
+		"@wordpress/blob": "^2.8.0",
+		"@wordpress/compose": "^3.13.1",
+		"@wordpress/icons": "^1.3.1",
+		"@wordpress/url": "^2.13.0",
+		"@wordpress/viewport": "^2.15.1",
+		"bootstrap": "^4.4.1",
+		"cgb-scripts": "1.23.0",
+		"classnames": "^2.2.6",
+		"lodash": "^4.17.15"
+	}
 }
