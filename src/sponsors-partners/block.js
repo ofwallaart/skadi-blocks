@@ -27,7 +27,7 @@ import { Fragment } from "@wordpress/element";
 const ALLOWED_BLOCKS = ["core/image", "cgb/skadi-image"];
 
 const sortOutCSSClasses = (className) => {
-	const wrapClasses = classnames(className, "container");
+	const wrapClasses = classnames(className);
 
 	return wrapClasses;
 };
@@ -92,11 +92,13 @@ registerBlockType("cgb/skadi-sponsors-partners", {
 	 * @returns {Mixed} JSX Component.
 	 */
 	edit: ({ className }) => {
-		const wrapClasses = sortOutCSSClasses(className);
-
 		return (
-			<div className={wrapClasses}>
-				<h1>{__("Sponsoren & Partners")}</h1>
+			<div className={className}>
+				<div className="row">
+					<div className="col">
+						<h1>{__("Sponsoren & Partners")}</h1>
+					</div>
+				</div>
 				<div className="row">
 					<div className="col">
 						<InnerBlocks template={TEMPLATE} />
@@ -120,11 +122,13 @@ registerBlockType("cgb/skadi-sponsors-partners", {
 	save: (props) => {
 		const { className } = props;
 
-		const wrapClasses = sortOutCSSClasses(className);
-
 		return (
-			<div className={wrapClasses}>
-				<h1>{__("Sponsoren & Partners")}</h1>
+			<div className={className}>
+				<div className="row">
+					<div className="col">
+						<h1>{__("Sponsoren & Partners")}</h1>
+					</div>
+				</div>
 				<div className="row">
 					<div className="col">
 						<InnerBlocks.Content />
