@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: skadi-block — CGB Gutenberg Block Plugin
+ * Plugin Name: skadi-blocks
  * Plugin URI: https://github.com/ahmadawais/create-guten-block/
  * Description: skadi-block — is a Gutenberg plugin created via create-guten-block.
  * Author: mrahmadawais, maedahbatool
