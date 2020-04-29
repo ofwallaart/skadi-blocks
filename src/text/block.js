@@ -19,7 +19,7 @@ import {
 	BlockControls,
 } from "@wordpress/block-editor";
 
-const sortOutCSSClasses = (alignment, className) => {
+const sortOutCSSClasses = (alignment, className, title) => {
 	//default
 	let titleClass = "order-left";
 
@@ -33,7 +33,9 @@ const sortOutCSSClasses = (alignment, className) => {
 
 	const titleClasses = classnames(titleClass);
 
-	return [titleClasses, wrapClass];
+	const textTitleClass = classnames("text-title", { nomargin: title });
+
+	return [titleClasses, wrapClass, textTitleClass];
 };
 
 /**
@@ -104,7 +106,11 @@ registerBlockType("cgb/block-text", {
 			setAttributes({ body: value });
 		};
 
-		const [titleClasses, wrapClass] = sortOutCSSClasses(alignment, className);
+		const [titleClasses, wrapClass, textTitleClass] = sortOutCSSClasses(
+			alignment,
+			className,
+			title
+		);
 
 		return [
 			isSelected && (
@@ -124,7 +130,7 @@ registerBlockType("cgb/block-text", {
 						<RichText
 							tagName="span"
 							placeholder={__("Write a title")}
-							className="text-title"
+							className={textTitleClass}
 							value={title}
 							onChange={onChangeTitle}
 						/>
@@ -155,7 +161,11 @@ registerBlockType("cgb/block-text", {
 			attributes: { title, subtitle, body, alignment },
 		} = props;
 
-		const [titleClasses, wrapClass] = sortOutCSSClasses(alignment, className);
+		const [titleClasses, wrapClass, textTitleClass] = sortOutCSSClasses(
+			alignment,
+			className,
+			title
+		);
 
 		return (
 			// <div className="bootstrap-block">
@@ -164,7 +174,7 @@ registerBlockType("cgb/block-text", {
 					<h3>
 						<RichText.Content
 							tagName="span"
-							className="text-title"
+							className={textTitleClass}
 							value={title}
 						/>
 						{title ? " " : null}

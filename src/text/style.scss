@@ -10,7 +10,11 @@
 		span:first-of-type {
 			margin-right: 5px;
 		}
+		span.nomargin {
+			margin-right: 0px;
+		}
 	}
+
 	.order-left {
 		text-align: left;
 
