@@ -128,7 +128,7 @@ registerBlockType("cgb/block-text", {
 							value={title}
 							onChange={onChangeTitle}
 						/>
-						{title || " "}
+						{title ? " " : null}
 						<RichText
 							tagName="span"
 							placeholder={__("Write a subtitle")}
@@ -167,7 +167,7 @@ registerBlockType("cgb/block-text", {
 							className="text-title"
 							value={title}
 						/>
-						{title || " "}
+						{title ? " " : null}
 						<RichText.Content
 							tagName="span"
 							className="text-subtitle"
