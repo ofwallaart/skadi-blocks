@@ -33,7 +33,9 @@ const sortOutCSSClasses = (alignment, className, title) => {
 
 	const titleClasses = classnames(titleClass);
 
-	const textTitleClass = classnames("text-title", { nomargin: title });
+	const textTitleClass = classnames("text-title", {
+		nomargin: title.length == 0 || title == null,
+	});
 
 	return [titleClasses, wrapClass, textTitleClass];
 };
