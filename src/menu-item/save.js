@@ -60,10 +60,12 @@ export default function save({ attributes }) {
 					)}
 				</a>
 			) : (
-				(image,
-				!RichText.isEmpty(caption) && (
-					<RichText.Content tagName="h4" value={caption} />
-				))
+				<a className={linkClass} href={"#"}>
+					{image}
+					{!RichText.isEmpty(caption) && (
+						<RichText.Content tagName="h4" value={caption} />
+					)}
+				</a>
 			)}
 		</Fragment>
 	);
